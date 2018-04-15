@@ -1,0 +1,24 @@
+forceRotorLibSimulation = 1;
+enableDebugConsole = 1;
+
+// TEST before using 
+//skipLobby = 1;
+
+//Respawn Settings
+respawn = "BASE";
+respawnDelay = 10;
+respawnTemplates[] = {"MenuInventory","MenuPosition"};
+
+//Garbage Collection
+corpseManagerMode = 1;
+corpseLimit = 20; 
+
+
+// tfar 
+//["tf_give_personal_radio_to_regular_soldier", true, true] call CBA_settings_fnc_set;
+//["tf_no_auto_long_range_radio", true, true] call CBA_settings_fnc_set;
+//["tf_give_microdagr_to_soldier", false, true] call CBA_settings_fnc_set;
+
+
+#include "Roles.sqf"
+#include "RespawnInventory.sqf"
