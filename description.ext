@@ -1,3 +1,12 @@
+
+class Header
+{
+gameType 	= Coop;	// See options above
+minPlayers 	= 1;	// Minimum players
+maxPlayers 	= 64;	// Maximum players
+};
+
+
 forceRotorLibSimulation = 1;
 enableDebugConsole = 1;
 
@@ -7,8 +16,10 @@ enableDebugConsole = 1;
 //Respawn Settings
 respawn = "BASE";
 respawnDelay = 10;
+respawnDialog = 0; 
 respawnTemplates[] = {"MenuInventory","MenuPosition"};
 
+respawnOnStart = 1;
 //Garbage Collection
 corpseManagerMode = 1;
 corpseLimit = 20; 
@@ -20,5 +31,5 @@ corpseLimit = 20;
 //["tf_give_microdagr_to_soldier", false, true] call CBA_settings_fnc_set;
 
 
-#include "Roles.sqf"
-#include "RespawnInventory.sqf"
+#include "Config\CfgRoles.sqf"
+#include "Config\CfgRespawnInventory.sqf"

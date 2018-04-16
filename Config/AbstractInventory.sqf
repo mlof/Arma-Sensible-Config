@@ -1,6 +1,4 @@
-class CfgRespawnInventory
-{
-		class AbstractInventory
+class AbstractInventory
 		{
 			weapons[] = {
 				"arifle_MXC_F",
@@ -48,57 +46,11 @@ class CfgRespawnInventory
 				"ACE_fieldDressing",
 			};
 			linkedItems[] = {
-				"tf_anprc152",
+//				"tf_anprc152",
 				"V_PlateCarrierL_CTRG",
 				"ItemMap",
 				"ItemCompass",
 				"ItemWatch",
-				"ItemRadio"
 			};
 			uniformClass = "U_B_CTRG_1";
 	};
-	class SquadLeader : AbstractInventory{
-			displayName = "Squad Leader";
-			role="Leader";
-	};
-	
-	class Rifleman : AbstractInventory{
-			displayName = "Rifleman";
-			role="Rifleman";
-	};
-	
-	class GrenadierRifleman : AbstractInventory{
-			displayName = "Grenadier Rifleman";
-			role="Rifleman";
-	};
-	
-	class AutomaticRifleman : AbstractInventory{
-			displayName = "Automatic Rifleman";
-			role="Rifleman";
-	};
-
-	class Medic : AbstractInventory{
-			displayName = "Medic";
-			role= "Support";
-	};
-
-	class DesignatedMarksman : AbstractInventory{
-			displayName = "Designated Marksman";
-			role="Marksman";
-	};
-
-	class Engineer  : AbstractInventory{
-			displayName = "Engineer";
-			role="Support";
-	};
-
-	class AA : AbstractInventory{
-			displayName = "Anti-Air";
-			role="Support";
-	};
-	class AT : AbstractInventory{
-			displayName = "Anti-Tank";
-			role="Support";
-	};
-
-};
